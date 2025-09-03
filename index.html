@@ -36,7 +36,7 @@
         <section class="section_button">
             <div class="container">
                 <h1 class="title">Effective Solutions for Your Business</h1>
-                <button type="button" class="button">Order Service</button>
+                <button type="button" class="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="features section">
@@ -255,7 +255,7 @@
                     <li class="portfolio-item">
                         <div class="image-container">
                             <img src="./images/banking.jpg" alt="banking app" width="360">
-                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts Â· Task Manager App Â· Calorie Tracker App Â· Exotic Fruit Ecommerce App Â· Cloud Storage App</p>
                         </div>
                         <div class="portfolio-card">
                             <h3 class="port_name">Banking App</h3>
@@ -265,7 +265,7 @@
                     <li class="portfolio-item">
                         <div class="image-container">
                             <img src="./images/cashless.jpg" alt="cashless payment" width="360">
-                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts Â· Task Manager App Â· Calorie Tracker App Â· Exotic Fruit Ecommerce App Â· Cloud Storage App</p>
                         </div>
                         <div class="portfolio-card">
                             <h3 class="port_name">Cashless Payment</h3>
@@ -275,7 +275,7 @@
                     <li class="portfolio-item">
                         <div class="image-container">
                             <img src="./images/meditation.jpg" alt="meditation app" width="360">
-                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts Â· Task Manager App Â· Calorie Tracker App Â· Exotic Fruit Ecommerce App Â· Cloud Storage App</p>
                         </div>
                         <div class="portfolio-card">
                             <h3 class="port_name">Meditation App</h3>
@@ -285,7 +285,7 @@
                     <li class="portfolio-item">
                         <div class="image-container">
                             <img src="./images/taxiservice.jpg" alt="taxi service" width="360">
-                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts Â· Task Manager App Â· Calorie Tracker App Â· Exotic Fruit Ecommerce App Â· Cloud Storage App</p>
                         </div>
                         <div class="portfolio-card">
                             <h3 class="port_name">Taxi Service</h3>
@@ -295,7 +295,7 @@
                     <li class="portfolio-item">
                         <div class="image-container">
                             <img src="./images/ilustrations.jpg" alt="illustration" width="360">
-                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts Â· Task Manager App Â· Calorie Tracker App Â· Exotic Fruit Ecommerce App Â· Cloud Storage App</p>
                         </div>
                         <div class="portfolio-card">
                             <h3 class="port_name">Screen Illustrations</h3>
@@ -305,7 +305,7 @@
                     <li class="portfolio-item">
                         <div class="image-container">
                             <img src="./images/online.jpg" alt="online courses" width="360">
-                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts Â· Task Manager App Â· Calorie Tracker App Â· Exotic Fruit Ecommerce App Â· Cloud Storage App</p>
                         </div>
                         <div class="portfolio-card">
                             <h3 class="port_name">Online Courses</h3>
@@ -357,8 +357,108 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-form">
+                <p class="subscribe-title">Subscribe</p>
+                <form class="subscription-form">
+                    <label class="subscribe-label">
+                        <input type="email" name="user-email" placeholder="E-mail" class="subscribe-input">
+                    </label>
+                    <button type="submit" class="subscribe-button">
+                        Subscribe
+                        <svg class="subscribe-icon" width="24" height="24">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+
+    <!-- Modal Window -->
+    <div class="modal-overlay" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="form-field">
+                    <label for="user-name" class="form-label">Name</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="user-name" name="user-name" class="form-input">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="user-phone" class="form-label">Phone</label>
+                    <div class="input-wrapper">
+                        <input type="tel" id="user-phone" name="user-phone" class="form-input">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="user-email" class="form-label">Email</label>
+                    <div class="input-wrapper">
+                        <input type="email" id="user-email" name="user-email" class="form-input">
+                        <svg class="input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-field-textarea">
+                    <label for="user-comment" class="form-label">Comment</label>
+                    <textarea id="user-comment" name="user-comment" placeholder="Text input" class="form-textarea"></textarea>
+                </div>
+                <div class="checkbox-field">
+                    <input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="visually-hidden checkbox-input">
+                    <label for="user-privacy" class="checkbox-label">
+                        <span class="custom-checkbox">
+                            <svg class="checkbox-icon" width="10" height="8">
+                                <use href="./images/icons.svg#check"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a href="#" class="privacy-link">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="modal-submit-btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        const modal = document.querySelector('[data-modal]');
+        const openModalBtn = document.querySelector('[data-modal-open]');
+        const closeModalBtn = document.querySelector('[data-modal-close]');
+
+        openModalBtn.addEventListener('click', () => {
+            modal.classList.add('is-open');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.remove('is-open');
+        });
+
+        // Close modal on overlay click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('is-open');
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+                modal.classList.remove('is-open');
+            }
+        });
+    </script>
 </body>
 
 </html>
